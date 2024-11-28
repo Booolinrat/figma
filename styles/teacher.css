@@ -1,0 +1,37 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styling the question boxes */
+#questionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-box p {
+    margin: 5px 0;
+}

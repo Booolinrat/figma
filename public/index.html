@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any Questions?</title>
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <h1>Any Questions?</h1>
+        <button>Create Class Code</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Class Code</h2>
+            <form id="questionForm">
+                <!-- Class Code Section -->
+                <div class="form-group">
+                    <label for="classCode">Class Code:</label>
+                    <input type="text" id="classCode" name="classCode" required>
+                    <button type="button" id="validateCode">Validate Code</button>
+                    <p id="codeMessage" style="color: red; display: none;">Invalid class code. Please try again.</p>
+                </div>
+
+                <!-- Question Section (Initially Hidden) -->
+                <div class="form-group" id="questionSection" style="display: none;">
+                    <label for="question">Your Question:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <!-- Confirmation and New Question Option -->
+            <div id="confirmationMessage" style="display: none;">
+                <p>Thank you for submitting your question!</p>
+                <button id="newQuestion">Submit Another Question</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
